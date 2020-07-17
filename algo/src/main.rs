@@ -1,4 +1,4 @@
-mod insertion_sort;
+mod selection_sort;
 fn main() {
-    insertion_sort::insertion::test_sort();
+    selection_sort::selection::test_sort();
 }
