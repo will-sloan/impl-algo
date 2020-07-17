@@ -1,0 +1,1 @@
+C:\Users\will5\Documents\summer_2020\impl-algo\algo\target\debug\algo.exe: C:\Users\will5\Documents\summer_2020\impl-algo\algo\src\insertion_sort.rs C:\Users\will5\Documents\summer_2020\impl-algo\algo\src\main.rs
