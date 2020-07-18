@@ -3,6 +3,7 @@ extern crate test;
 mod insertion_sort;
 mod merge_sort;
 mod selection_sort;
+mod quick_sort;
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -20,4 +21,9 @@ mod tests {
     fn bench_insertion(b: &mut Bencher) {
         b.iter(|| insertion_sort::insertion::test_sort());
     }
+    #[bench]
+    fn bench_insertion(b: &mut Bencher) {
+        b.iter(|| quick_sort::quick::test_sort());
+    }
+
 }
