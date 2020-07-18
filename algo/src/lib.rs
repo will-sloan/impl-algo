@@ -1,3 +1,4 @@
+
 #![feature(test)]
 extern crate test;
 mod insertion_sort;
@@ -13,17 +14,18 @@ mod tests {
     fn bench_merge(b: &mut Bencher) {
         b.iter(|| merge_sort::merge::test_sort());
     }
+//     #[bench]
+//     fn bench_selection(b: &mut Bencher) {
+//         b.iter(|| selection_sort::selection::test_sort());
+//     }
+//     #[bench]
+//     fn bench_insertion(b: &mut Bencher) {
+//         b.iter(|| insertion_sort::insertion::test_sort());
+//     }
     #[bench]
-    fn bench_selection(b: &mut Bencher) {
-        b.iter(|| selection_sort::selection::test_sort());
-    }
-    #[bench]
-    fn bench_insertion(b: &mut Bencher) {
-        b.iter(|| insertion_sort::insertion::test_sort());
-    }
-    #[bench]
-    fn bench_insertion(b: &mut Bencher) {
+    fn bench_quick(b: &mut Bencher) {
         b.iter(|| quick_sort::quick::test_sort());
     }
 
 }
+
