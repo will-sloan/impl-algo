@@ -27,7 +27,7 @@ pub mod insertion {
         use rand::Rng;
         let mut rng = rand::thread_rng();
         let mut arr: Vec<i32> = Vec::new();
-        for _ in 0..rng.gen_range(5, 100) {
+        for _ in 0..10000{
             arr.push(rng.gen_range(0, 100));
         }
         println!("{:?}", arr);
