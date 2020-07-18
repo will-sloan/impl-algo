@@ -1,4 +1,4 @@
-
+/*
 #![feature(test)]
 extern crate test;
 mod insertion_sort;
@@ -28,4 +28,4 @@ mod tests {
     }
 
 }
-
+*/
